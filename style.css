@@ -477,6 +477,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 5rem 0;
 }
 
 .purchase-plan .plans-section .plan-title {
@@ -600,9 +601,19 @@
 }
 
 .subscribe-btn {
-  padding: 0.8rem 4.1rem;
+  padding: 0.8rem 4rem;
   background-color: #9F3919;
   color: #fff;
+  border: none;
+  border-radius: 1rem;
+}
+
+.form {
+  outline: none;
+  height: 5vh;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  border-radius: .7rem;
   border: none;
 }
 
