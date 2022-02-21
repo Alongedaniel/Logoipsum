@@ -5,11 +5,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .text {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #696871;
@@ -18,12 +18,16 @@
 
 .btn {
   padding: 1.3rem 4rem;
-  background-color: #FF7143;
+  background-color: #ff7143;
   color: #ffffff;
   font-weight: 700;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #9f3919;
 }
 
 .navbar {
@@ -79,7 +83,10 @@
 
 .navbar .nav-links .nav-link.active {
   opacity: 1;
-  text-decoration: underline;
+}
+
+.navbar .nav-links .nav-link:hover {
+  color: #ff7143;
 }
 
 .navbar .cta {
@@ -139,7 +146,7 @@
 
 .introduction .intro-text .intro-title {
   font-size: 80px;
-  color: #19191B;
+  color: #19191b;
   font-weight: bolder;
   line-height: 77px;
   margin-bottom: 3rem;
@@ -170,8 +177,12 @@
 }
 
 .introduction .button-action .download-btn {
-  background-color: #5454D4;
+  background-color: #5454d4;
   margin-right: 2rem;
+}
+
+.introduction .button-action .download-btn:hover {
+  background-color: #696871;
 }
 
 .introduction .button-action .download-icon {
@@ -316,13 +327,17 @@
   font-size: 50px;
   line-height: 57px;
   margin-bottom: 2rem;
-  color: #19191B;
+  color: #19191b;
 }
 
 .activities .text-section .learn-more {
   text-decoration: none;
   font-weight: bold;
-  color: #5454D4;
+  color: #5454d4;
+}
+
+.activities .text-section .learn-more:hover {
+  color: #ff7143;
 }
 
 .activities .cover-image {
@@ -385,7 +400,7 @@
 }
 
 .audits .audit-items .audit-title {
-  color: #19191B;
+  color: #19191b;
   font-size: 24px;
   margin: 2rem 0;
 }
@@ -395,7 +410,7 @@
 }
 
 .audits .audit-images {
-  padding-left: .7rem;
+  padding-left: 0.7rem;
   height: 72px;
   -webkit-animation: drop 1.5s ease;
           animation: drop 1.5s ease;
@@ -442,18 +457,27 @@
 
 .purchase-plan .purchase-header .purchase-title {
   font-size: 60px;
-  color: #19191B;
+  color: #19191b;
   width: 50%;
 }
 
 .purchase-plan .purchase-header .purchase-btn1 {
-  background-color: #5454D4;
+  background-color: #5454d4;
   border-radius: 1rem 0 0 1rem;
+}
+
+.purchase-plan .purchase-header .purchase-btn1:hover {
+  background-color: #ff7143;
 }
 
 .purchase-plan .purchase-header .purchase-btn2 {
   background-color: #f7f7fb;
-  color: #19191B;
+  color: #19191b;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.purchase-plan .purchase-header .purchase-btn2:hover {
+  color: #5454d4;
 }
 
 .purchase-plan .purchase-header .annual-plan {
@@ -461,7 +485,7 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #f7f7fb;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 1rem;
 }
 
@@ -481,14 +505,14 @@
 }
 
 .purchase-plan .plans-section .plan-title {
-  color: #19191B;
+  color: #19191b;
   font-size: 60px;
   margin-bottom: 2rem;
 }
 
 .purchase-plan .plans-section .plan-btn {
   background-color: #ffffff;
-  color: #5454D4;
+  color: #5454d4;
   font-weight: bold;
   padding: 1.3rem 5rem;
   border: none;
@@ -496,9 +520,18 @@
   font-size: 17px;
 }
 
-.purchase-plan .plans-section .premium-btn {
-  background-color: #9F3919;
+.purchase-plan .plans-section .plan-btn:hover {
+  background-color: #5454d4;
   color: #ffffff;
+}
+
+.purchase-plan .plans-section .premium-btn {
+  background-color: #9f3919;
+  color: #ffffff;
+}
+
+.purchase-plan .plans-section .premium-btn:hover {
+  background-color: #ff7143;
 }
 
 .purchase-plan .plans-section .month {
@@ -506,11 +539,11 @@
 }
 
 .purchase-plan .plans-section .premium-plan {
-  background-color: #FF7143;
+  background-color: #ff7143;
   text-align: center;
   padding: 2rem;
   width: 32.5%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .purchase-plan .plans-section .plans {
@@ -518,7 +551,7 @@
   text-align: center;
   padding: 2rem;
   width: 32.5%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 1009px) {
@@ -580,7 +613,7 @@
 
 .footer {
   padding: 3rem 10vw;
-  background-color: #FF7143;
+  background-color: #ff7143;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,18 +635,22 @@
 
 .subscribe-btn {
   padding: 0.8rem 4rem;
-  background-color: #9F3919;
+  background-color: #9f3919;
   color: #fff;
   border: none;
   border-radius: 1rem;
+}
+
+.subscribe-btn:hover {
+  background-color: #ff7143;
 }
 
 .form {
   outline: none;
   height: 5vh;
   margin-bottom: 1rem;
-  padding: .5rem;
-  border-radius: .7rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
   border: none;
 }
 
