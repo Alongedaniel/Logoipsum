@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 html {
   scroll-behavior: smooth;
+  background-color: rgb(182, 182, 182);
 }
 * {
   margin: 0;
@@ -139,7 +140,8 @@ strong {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #5454a4;
+  // background: linear-gradient(to bottom, #5454d4, #ff7143);
+  background-color: #222;
   width: 60%;
   height: 100vh;
   position: fixed;
@@ -154,16 +156,28 @@ strong {
     margin-bottom: 2rem;
 
     .mobile-logo {
-      width: 60%;
+      width: 50px;
+      height: 50px;
+      margin-right: 0.5rem;
+    }
+
+    .mobile-nav-logo {
+      display: flex;
+      color: white;
+      align-items: center;
+      cursor: pointer;
+      font-size: 20px;
     }
 
     .close {
       font-size: 25px;
       color: #ff7143;
       transition: all 300ms ease;
+      cursor: pointer;
     }
     .close:hover {
       color: black;
+      transform: rotate(180deg);
     }
   }
 
@@ -179,7 +193,7 @@ strong {
 
         .anchor {
           text-decoration: none;
-          color: #000;
+          color: #fff;
           font-size: 20px;
         }
         .anchor:hover {
@@ -272,9 +286,11 @@ strong {
   border: none;
   font-size: 20px;
   outline: 0;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 .menu-icon:hover {
-  transform: translateY(-5px);
+  transform: rotate(180deg);
 }
 
 @media (min-width: 1030px) {
@@ -322,6 +338,7 @@ strong {
     width: 50%;
     margin-left: 6rem;
     animation: drop 1.5s ease;
+    cursor: pointer;
   }
 
   .button-action {
@@ -339,6 +356,7 @@ strong {
 
     .download-icon {
       animation: drop 1.5s ease;
+      cursor: pointer;
     }
   }
 }
@@ -418,6 +436,7 @@ strong {
   .logos {
     margin: 2rem 0;
     animation: drop 1.5s ease;
+    cursor: pointer;
   }
 }
 
@@ -451,6 +470,7 @@ strong {
 
   .cover-image {
     animation: drop 1.5s ease;
+    cursor: pointer;
   }
 }
 
@@ -561,7 +581,7 @@ strong {
 
     .annual-plan {
       display: flex;
-      background-color: #f7f7fb;
+      background-color: rgb(182, 182, 182);
       padding: 0.2rem;
       border-radius: 1rem;
     }
@@ -613,6 +633,10 @@ strong {
       padding: 2rem;
       width: 32.5%;
       border-radius: 0.5rem;
+      box-shadow: 5px 10px 15px #222;
+    }
+    .premium-plan:hover {
+      box-shadow: none;
     }
 
     .plans {
@@ -621,6 +645,10 @@ strong {
       padding: 2rem;
       width: 32.5%;
       border-radius: 0.5rem;
+      box-shadow: 5px 10px 15px #222;
+    }
+    .plans:hover {
+      box-shadow: none;
     }
   }
 }
@@ -696,6 +724,7 @@ strong {
   color: #fff;
   border: none;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .subscribe-btn:hover {
   background-color: #ff7143;

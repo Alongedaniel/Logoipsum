@@ -8,13 +8,22 @@ let menuToggler = function () {
   let closeMenu = document.querySelector(".close");
   let mobileMenu = document.querySelector(".mobile-nav");
   let links = document.querySelectorAll(".mobile-nav-link");
-  let body = document.querySelector("body");
+  let body = document.querySelector("section");
+  let header = document.querySelector("header")
 
-  openMenu.addEventListener("click", () => {
+  openMenu.addEventListener('click', () => {
     mobileMenu.style.transform = "translate(0px)";
-    openMenu.style.transform = "rotate(180deg)";
+    document.style.opacity = '0.5';
   });
+
   closeMenu.addEventListener("click", () => {
     mobileMenu.style.transform = "translate(-1000px)";
   });
+
+  body.addEventListener('click', () => {
+    mobileMenu.style.transform = "translate(-1000px)"
+  })
+  header.addEventListener('click', () => {
+    mobileMenu.style.transform = "translate(-1000px)"
+  })
 };
