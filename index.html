@@ -30,23 +30,42 @@
     </div>
 
     <!--         preloader end      -->
-    
+
     <nav class="navbar">
- 
+        <div class="mobile-nav">
+            <div class="mobile-nav-top">
+                <img class="mobile-logo" src="./images/logo.png" alt="">
+                <i class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="mobile-nav-bottom">
+                <ul class="mobile-nav-links">
+                    <li class="active mobile-nav-link" onclick="menuToggler()"><a class="anchor"
+                            href="index.html">Home</a></li>
+                    <li class="mobile-nav-link" onclick="menuToggler()"><a class="anchor" href="#audits"
+                            target="blank">Features</a></li>
+                    <li class="mobile-nav-link" onclick="menuToggler()"><a class="anchor"
+                            href="#purchase-plan">Pricing</a></li>
+                    <li class="mobile-nav-link" onclick="menuToggler()"><a class="anchor" href="#">Blog</a></li>
+                    <li class="mobile-nav-link" onclick="menuToggler()"><a class="anchor" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="logo">
             <img src="./images/logo.png" alt="">
         </div>
         <ul class="nav-links">
             <li><a class="active nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="#">Features</a></li>
+            <li><a class="nav-link" href="#audits">Features</a></li>
             <li><a class="nav-link" href="#purchase-plan">Pricing</a></li>
             <li><a class="nav-link" href="#">Blog</a></li>
         </ul>
         <div class="cta">
             <button class="btn">Get Started</button>
         </div>
-        <i class="fa-solid fa-bars menu-icon"></i>
+        <i class="fa-solid fa-bars menu-icon" onclick="menuToggler()"></i>
+    </nav>
+
     </nav>
     <header class="introduction">
         <div class="intro-text">
@@ -86,7 +105,7 @@
         </div>
         <img class="cover-image" src="./images/Group 12.png" alt="">
     </section>
-    <section class="audits">
+    <section id="audits">
         <div class="audit-items">
             <img class="audit-images" src="./images/Card (3).png" alt="">
             <h1 class="audit-title">Benchmarks</h1>
@@ -138,7 +157,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer id="footer">
         <div class="footer-menu">
             <h4>Address</h4>
             <ul class="footer-nav">
