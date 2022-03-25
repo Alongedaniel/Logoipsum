@@ -24,7 +24,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -692,7 +692,7 @@ strong {
 }
 
 @media (max-width: 930px) {
-  .audits {
+  #audits {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -944,7 +944,7 @@ strong {
 }
 
 @media (max-width: 900px) {
-  .footer {
+  #footer {
     padding: 3rem 5vw;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;

@@ -18,7 +18,7 @@ html {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   justify-content: center;
   background-color: #000;
@@ -509,7 +509,7 @@ strong {
 }
 
 @media (max-width: 930px) {
-  .audits {
+  #audits {
     flex-direction: column;
   }
 
@@ -717,7 +717,7 @@ strong {
   margin-right: 0.5rem;
 }
 @media (max-width: 900px) {
-  .footer {
+  #footer {
     padding: 3rem 5vw;
     flex-direction: column !important;
     align-items: flex-start !important;
