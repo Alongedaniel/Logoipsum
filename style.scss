@@ -142,7 +142,7 @@ strong {
   top: 0;
   // background: linear-gradient(to bottom, #5454d4, #ff7143);
   background-color: #222;
-  width: 60%;
+  width: 70%;
   height: 100vh;
   position: fixed;
   padding: 1rem;
@@ -166,7 +166,8 @@ strong {
       color: white;
       align-items: center;
       cursor: pointer;
-      font-size: 20px;
+      width: 60%;
+      font-size: 14px;
     }
 
     .close {
