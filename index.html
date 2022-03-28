@@ -31,25 +31,38 @@
 
     <!--         preloader end      -->
 
-    <nav class="navbar">
-        <div class="mobile-nav">
-            <div class="mobile-nav-top">
-                <div class="mobile-nav-logo">
-                    <img class="mobile-logo" src="./images/logo 2.png" alt="">
-                    <h1>Logoipsum</h1>
+
+              <!-- Overlay start -->
+
+<div class="overlayer"></div>
+
+                <!-- Overlay End    -->
+
+
+            <!--      Side Bar Start    -->
+
+            <div class="mobile-nav">
+                <div class="mobile-nav-top">
+                    <div class="mobile-nav-logo">
+                        <img class="mobile-logo" src="./images/logo 2.png" alt="">
+                        <h1>Logoipsum</h1>
+                    </div>
+                    <i class="fa-solid fa-xmark close"></i>
                 </div>
-                <i class="fa-solid fa-xmark close"></i>
+                <div class="mobile-nav-bottom">
+                    <ul class="mobile-nav-links">
+                        <li class="mobile-nav-link"><a class="active anchor" href="index.html">Home</a></li>
+                        <li class="mobile-nav-link"><a class="anchor" href="#audits">Features</a></li>
+                        <li class="mobile-nav-link"><a class="anchor" href="#purchase-plan">Pricing</a></li>
+                        <li class="mobile-nav-link"><a class="anchor" href="#">Blog</a></li>
+                        <li class="mobile-nav-link"><a class="anchor" href="#footer">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="mobile-nav-bottom">
-                <ul class="mobile-nav-links">
-                    <li class="mobile-nav-link"><a class="active anchor" href="index.html">Home</a></li>
-                    <li class="mobile-nav-link"><a class="anchor" href="#audits">Features</a></li>
-                    <li class="mobile-nav-link"><a class="anchor" href="#purchase-plan">Pricing</a></li>
-                    <li class="mobile-nav-link"><a class="anchor" href="#">Blog</a></li>
-                    <li class="mobile-nav-link"><a class="anchor" href="#footer">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+
+                <!-- Side Bar End -->
+
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <img src="./images/logo.png" alt="">
         </div>
@@ -75,7 +88,6 @@
                 subscription business end-to-end.</p>
             <div class="button-action">
                 <button class="btn download-btn">Download</button>
-                <img class="download-icon" src="./images/Down Arrow.png" alt="">
             </div>
         </div>
         <img class="intro-cover" src="./images/header-image.png" alt="">
@@ -157,6 +169,7 @@
         </div>
     </section>
     <footer id="footer">
+        <img class="toTop" src="./images/Arrow.png" alt="" onclick="scrollToTop()">
         <div class="footer-menu">
             <h4>Address</h4>
             <ul class="footer-nav">

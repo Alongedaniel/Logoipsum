@@ -9,21 +9,26 @@ let menuToggler = function () {
   let mobileMenu = document.querySelector(".mobile-nav");
   let links = document.querySelectorAll(".mobile-nav-link");
   let body = document.querySelector("section");
-  let header = document.querySelector("header")
+  let header = document.querySelector("header");
+  let overlay = document.querySelector(".overlayer");
 
-  openMenu.addEventListener('click', () => {
+  openMenu.addEventListener("click", () => {
+    overlay.classList.add("overlay");
     mobileMenu.style.transform = "translate(0px)";
-    document.style.opacity = '0.5';
+    document.style.opacity = "0.5";
   });
 
   closeMenu.addEventListener("click", () => {
-    mobileMenu.style.transform = "translate(-1000px)";
+    mobileMenu.style.transform = "translate(-100vw)";
+    overlay.classList.remove("overlay");
   });
 
-  body.addEventListener('click', () => {
-    mobileMenu.style.transform = "translate(-1000px)"
-  })
-  header.addEventListener('click', () => {
-    mobileMenu.style.transform = "translate(-1000px)"
-  })
+  overlay.addEventListener("click", () => {
+    mobileMenu.style.transform = "translate(-100vw)";
+    overlay.classList.remove("overlay");
+  });
 };
+
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
