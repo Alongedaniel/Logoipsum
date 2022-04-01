@@ -11,11 +11,17 @@ let menuToggler = function () {
   let body = document.querySelector("section");
   let header = document.querySelector("header");
   let overlay = document.querySelector(".overlayer");
+  let bar1 = document.querySelector(".firstbar");
+  let bar2 = document.querySelector(".secondbar");
+  let bar3 = document.querySelector(".thirdbar");
 
   openMenu.addEventListener("click", () => {
     overlay.classList.add("overlay");
     mobileMenu.style.transform = "translate(0px)";
-    document.style.opacity = "0.5";
+    // document.style.opacity = "0.5";
+    bar1.classList.add("bar1");
+    bar2.classList.add("bar2");
+    bar3.classList.add("bar3");
   });
 
   closeMenu.addEventListener("click", () => {

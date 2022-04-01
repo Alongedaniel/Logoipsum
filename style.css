@@ -219,6 +219,7 @@ strong {
   position: fixed;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  pointer-events: none;
 }
 
 .mobile-nav {
@@ -420,19 +421,94 @@ strong {
           justify-content: flex-end;
 }
 
-.menu-icon {
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-  outline: 0;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  cursor: pointer;
+.navbar .bar {
+  width: 32px;
+  height: 0.5vh;
+  margin-bottom: 0.3rem;
+  border-radius: 0.2rem;
+  background-color: #19191b;
 }
 
-.menu-icon:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.navbar .bar1 {
+  -webkit-animation-name: slant;
+          animation-name: slant;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.navbar .bar2 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  width: 20px;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.navbar .bar3 {
+  -webkit-animation-name: slantup;
+          animation-name: slantup;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes slantup {
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: -.7rem;
+  }
+}
+
+@keyframes slantup {
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: -.7rem;
+  }
+}
+
+@-webkit-keyframes slant {
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-bottom: 0;
+  }
+}
+
+@keyframes slant {
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-bottom: 0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  100% {
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  100% {
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+    opacity: 0;
+  }
 }
 
 @media (min-width: 1030px) {
