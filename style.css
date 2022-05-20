@@ -912,8 +912,8 @@ strong {
 }
 
 #purchase-plan .plans-section .plan-btn {
-  background-color: #ffffff;
-  color: #5454d4;
+  color: #ffffff;
+  background-color: #5454d4;
   font-weight: bold;
   padding: 1.3rem 5rem;
   border: none;
@@ -922,7 +922,7 @@ strong {
 }
 
 #purchase-plan .plans-section .plan-btn:hover {
-  background-color: #5454d4;
+  background-color: #9f3919;
   color: #ffffff;
 }
 
@@ -932,7 +932,7 @@ strong {
 }
 
 #purchase-plan .plans-section .premium-btn:hover {
-  background-color: #ff7143;
+  background-color: #5454d4;
 }
 
 #purchase-plan .plans-section .month {
@@ -1069,7 +1069,7 @@ strong {
 }
 
 .subscribe-btn:hover {
-  background-color: #ff7143;
+  background-color: #5454d4;
 }
 
 .form {
